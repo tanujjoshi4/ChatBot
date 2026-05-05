@@ -1,0 +1,35 @@
+{
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "cd /Users/tanujjoshi/Documents/Learning/Claude && python -m py_compile chat.py 2>&1 && echo '✓ chat.py syntax OK' || echo '✗ chat.py has syntax errors'"
+          }
+        ]
+      }
+    ],
+    "Stop": [
+      {
+        "hooks": [
+          {
+            "type": "command",
+            "command": "echo 'Session ended. Remember to commit your changes: git status'"
+          }
+        ]
+      }
+    ]
+  },
+  "mcpServers": {
+    "filesystem": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@modelcontextprotocol/server-filesystem",
+        "/Users/tanujjoshi/Documents/Learning/Claude"
+      ]
+    }
+  }
+}
