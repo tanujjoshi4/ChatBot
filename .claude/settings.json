@@ -6,7 +6,7 @@
         "hooks": [
           {
             "type": "command",
-            "command": "cd /Users/tanujjoshi/Documents/Learning/Claude && python -m py_compile chat.py 2>&1 && echo '✓ chat.py syntax OK' || echo '✗ chat.py has syntax errors'"
+            "command": "cd /Users/tanujjoshi/Documents/Learning/Claude && python3 -m py_compile chat.py 2>&1 && echo '✓ chat.py syntax OK' || echo '✗ chat.py has syntax errors'"
           }
         ]
       }
