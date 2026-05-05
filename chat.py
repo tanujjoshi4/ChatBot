@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 import anthropic
 
-# Claude API chatbot — learning project
+# Main chatbot entrypoint using Anthropic SDK
 
 load_dotenv()
 
