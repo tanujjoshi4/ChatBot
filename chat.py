@@ -4,7 +4,7 @@ import os
 from dotenv import load_dotenv
 import anthropic
 
-#testing skills again for PR
+# Claude API chatbot — learning project
 
 load_dotenv()
 
